@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Mulish:wght@500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/jquery.fancybox.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+ 
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo__box">
+                    <img class="logo__img" src="./images/logo.svg" alt="Логотип">
+                    <div class="logo__name">
+                        <p class="logo__title">M<span class="logo__title-elem">&</span>M Dental</p>
+                        <p class="logo__descr">Посміхаймось разом!</p>
+                    </div>
+                </div>
+    
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#hero">Головна</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#services">Послуги</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#doctors">Лікарі</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#gallery">Галерея</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#price">Прайс</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#contacts">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <ul class="header__social-list">
+                    <li class="header__social-item">
+                        <a class="header__social-link" href="https://t.me/spector7998">
+                            <img class="header__social-img" src="./images/telegram.svg" alt="Телеграм">
+                        </a>
+                    </li>
+                    <li class="header__social-item">
+                        <a class="header__social-link" href="viber://chat?number=+380931226316">
+                            <img class="header__social-img" src="./images/viber.svg" alt="Вайбер">
+                        </a>
+                    </li>
+                    <li class="header__social-item">
+                        <a class="header__social-link" href="#">
+                            <img class="header__social-img" src="./images/messenger.svg" alt="Месенджер">
+                        </a>
+                    </li>
+                </ul>
+
+                <button class="menu-open">
+                    <img src="./images/menu-icon.svg" alt="Меню">
+                </button>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero__inner">
+
+                <ul class="hero__social-list">
+                    <li class="hero__social-item">
+                        <a class="hero__social-link" href="https://t.me/spector7998">
+                            <img class="hero__social-img" src="./images/telegram.svg" alt="Телеграм">
+                        </a>
+                    </li>
+                    <li class="hero__social-item">
+                        <a class="hero__social-link" href="viber://chat?number=+380931226316">
+                            <img class="hero__social-img" src="./images/viber.svg" alt="Вайбер">
+                        </a>
+                    </li>
+                    <li class="hero__social-item">
+                        <a class="hero__social-link" href="#">
+                            <img class="hero__social-img" src="./images/messenger.svg" alt="Месенджер">
+                        </a>
+                    </li>
+                </ul>
+
+                <h1 class="hero__title">Сучасна хірургічна стоматологія у Вінниці</h1>
+                <p class="hero__pretitle">Краса і здоров’я у поєднанні з іноваціями та професіоналізмом</p>
+
+                <div class="hero__btn-box">
+                    <button class="hero__form-btn btn open-popup" type="submit">Запис на консультацію</button>
+                </div>
+      
+                <div class="hero__box">
+                    <div class="hero__worktime-box">
+                        <p class="worktime__title">Графік роботи</p>
+                        <p class="worktime__descr">Пн–пт: 09:00 – 20:00</p>
+                        <p class="worktime__descr">Сб–нд: 10:00 – 21:00 </p>
+                    </div>
+
+                    <div class="hero__phone-box">
+                        <p class="hero__phone-title">Номери телефонів</p>
+                        <a class="hero__phone-link" href="tel:+380931226316">(093) 122-63-16</a>
+                        <a class="hero__phone-link" href="tel:+380982437833">(098) 243-78-33</a>
+                    </div>
+
+                    <form class="hero__form telegram-form">
+                        <h2 class="form__title">Заявка на консультацію</h2>
+                        <p class="form__pretitile">Ми зв’яжемося з вами якомога швидше, щоб обговорити ваші стоматологічні потреби</p>
+                        <input class="hero__form-input" name="name" type="text" placeholder="Ваше ім'я" autocomplete="off">
+                        <input class="hero__form-input phone" name="phone" type="tel" placeholder="Ваш номер телефону" autocomplete="off">
+                        <textarea class="hero__form-textarea" name="text" placeholder="Коментар" autocomplete="off"></textarea>
+                        <button class="hero__form-btn btn" type="submit">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+        </div>   
+    </section>
+
+    <section class="services" id="services">
+        <div class="services__inner container">
+            <h2 class="services__title title">Наші послуги</h2>
+            <p class="services__pretitle">Стоматологічні послуги всіх видів: терапія, ортопедія, хірургія.</p>
+        
+            <div class="services__box">
+                <div class="services__box-item">
+                    <img class="services__box-img" src="./images/services-1.svg" alt="Послуги">
+                    <h3 class="services__box-title">Естетична реставрація</h3>
+                    <p class="services__box-descr">Художня реставрація, що відтворює косметичний ефект ротової порожнини, анатомічну форму і функціонал пошкоджених зубів.</p>
+
+                </div>
+                <div class="services__box-item">
+                    <img class="services__box-img" src="./images/services-2.svg" alt="Послуги">
+                    <h3 class="services__box-title">Видалення зубів</h3>
+                    <p class="services__box-descr">Процедури видалення зубів проходять в максимально комфортних для пацієнтів умовах. Проводимо хірургічні операції будь-якої складності.</p>
+
+                </div>
+                <div class="services__box-item">
+                    <img class="services__box-img" src="./images/services-3.svg" alt="Послуги">
+                    <h3 class="services__box-title">Зуби мудрості</h3>
+                    <p class="services__box-descr">Ми допомагаємо пацієнтам навіть у тих випадках, коли зуб мудрості має глибоке коріння і знаходиться всередині кісткової тканини.</p>
+
+                </div>
+                <div class="services__box-item">
+                    <img class="services__box-img" src="./images/services-4.svg" alt="Послуги">
+                    <h3 class="services__box-title">Імплантація</h3>
+                    <p class="services__box-descr">Пропонуємо естетично вигідний та довговічний варіант зубного протезування – імплантацію.</p>
+
+                </div>
+                <div class="services__box-item">
+                    <img class="services__box-img" src="./images/services-5.svg" alt="Послуги">
+                    <h3 class="services__box-title">Протезування на імплантах</h3>
+                    <p class="services__box-descr">Проводимо повний цикл імплантації зубів від кісткової пластики (за потреби) до виготовлення штучних коронок на імплантах.</p>
+
+                </div>
+                <div class="services__box-item">
+                    <img class="services__box-img" src="./images/services-6.svg" alt="Послуги">
+                    <h3 class="services__box-title">Амбулаторна хірургія</h3>
+                    <p class="services__box-descr">Хірургія порожнини рота включає в себе профілактику і лікування внутрішньоротових патологій.</p>
+
+                </div>               
+            </div>       
+        </div>
+    </section>
+
+    <section class="doctors" id="doctors">
+        <div class="doctors__inner container">
+            <h2 class="title">Лікарі</h2>
+            <div class="doctors__item">
+                <img class="doctors__img1" src="./images/doctor-1.png" alt="Лікар Молдовян Ігор Вячеславович">
+                <div class="doctors__info">
+                    <h3 class="doctors__info-title">Молдовян Ігор Вячеславович</h3>
+                    <h4 class="doctors__info-pretitle">Лікар хірург-стоматолог</h4>
+                        <p class="doctors__info-descr1">Досвід практичної роботи - 5 років</p>
+                        <p class="doctors__info-descr2">10+ сертифікатів і дипломів</p>
+                        <p class="doctors__info-descr3">Імплантація</p>
+                        <p class="doctors__info-descr4">Сфера його хірургічної діяльності - імплантація, операції на м’яких тканинах і кістках, оперативне лікування запальних процесів, закриття рецесій, видалення зубів, екзостозів.</p>
+                </div>
+            </div>
+            <div class="doctors__item doctors__item-1">
+                    <div class="doctors__info">
+                        <h3 class="doctors__info-title">Мойсеєв Тимофій Сергійович</h3>
+                        <h4 class="doctors__info-pretitle">Лікар ортопед-стоматолог</h4>
+                        <p class="doctors__info-descr1">Досвід практичної роботи - 8 років</p>
+                        <p class="doctors__info-descr2">20+ сертифікатів і дипломів</p>
+                        <p class="doctors__info-descr3">Протезування на імплантах</p>
+                        <p class="doctors__info-descr4">Сфера його стоматологічної діяльності - імплантація, протезування на імплантах, відновлення анатомічної цілісності коронок при значному руйнуванні твердих тканин зуба.</p>
+                    </div>
+                    <img class="doctors__img2" src="./images/doctor-1.png" alt="Лікар Мойсеєв Тимофій Сергійович">
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta__inner container">
+            <div class="cta__text-box">
+                <p class="cta__title">До омріяної посмішки лише один крок!</p>
+                <p class="cta__pretitle">Запишіться до нас на прийом.</p>
+            </div>
+            <button class="cta__btn open-popup" type="submit">Залишити заявку</button>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="gallery__inner container">
+            <h2 class="title">Галерея до і після</h2>
+            <div class="gallery__slider">
+                <div class="gallery__slider-items">
+                  <img class="gallery__slider-img" src="./images/slider-5.jpg" alt="">
+                </div>
+                <div class="gallery__slider-items">
+                  <img class="gallery__slider-img" src="./images/slider-4.jpg" alt="">
+                </div>
+                <div class="gallery__slider-items">
+                  <img class="gallery__slider-img" src="./images/slider-3.jpg" alt="">
+                </div>
+                <div class="gallery__slider-items">
+                  <img class="gallery__slider-img" src="./images/slider-1.jpg" alt="">
+                </div>
+                <div class="gallery__slider-items">
+                  <img class="products__slider-img" src="./images/slider-5.jpg" alt="">
+                </div>
+                <div class="gallery__slider-items">
+                  <img class="gallery__slider-img" src="./images/slider-2.jpg" alt="">
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <section class="prices" id="price">
+        <div class="prices__inner container">
+            <h2 class="title">Вартість послуг</h2>
+            <div class="prices__items">
+                <div class="prices__item prices__item--active">
+                    <h3 class="prices__item-title">Загальні</h3>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Консультація</p>
+                        <p class="price__item-cost">100 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Анастезія</p>
+                        <p class="price__item-cost">від 200 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Діагностика і планування</p>
+                        <p class="price__item-cost">500 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Професійна гігієна</p>
+                        <p class="price__item-cost">1200 грн</p>
+                    </div>
+                </div>
+                <div class="prices__item">
+                    <h3 class="prices__item-title">Протезування</h3>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Зняття відбитку</p>
+                        <p class="price__item-cost">250 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Виготовлення діагностичних моделей</p>
+                        <p class="price__item-cost">250 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Зняття штучної коронки</p>
+                        <p class="price__item-cost">300 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Металева куксова вкладка</p>
+                        <p class="price__item-cost">700 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Вкладка з діоксиду цирконія</p>
+                        <p class="price__item-cost">2400 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Штучна пластмасова коронка</p>
+                        <p class="price__item-cost">400 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Штучна металева лита коронка</p>
+                        <p class="price__item-cost">1200 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Штучна металокерамічна коронка</p>
+                        <p class="price__item-cost">2400 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Штучна коронка з диоксіду цирконія</p>
+                        <p class="price__item-cost">4000 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Штучна керамічна коронка</p>
+                        <p class="price__item-cost">7000 грн</p>
+                    </div>
+                </div>
+                <div class="prices__item">
+                    <h3 class="prices__item-title">Протезування на імплантах</h3>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Контрольно-діагностичні моделі</p>
+                        <p class="price__item-cost">600 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Штучна металева лита коронка</p>
+                        <p class="price__item-cost">1200 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Штучна металокерамічна коронка</p>
+                        <p class="price__item-cost">2400 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Штучна коронка з диоксіду цирконія</p>
+                        <p class="price__item-cost">4000 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Штучна керамічна коронка</p>
+                        <p class="price__item-cost">7000 грн</p>
+                    </div>
+                </div> 
+                <div class="prices__item">
+                    <h3 class="prices__item-title">Імплантація</h3>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Контрольно-діагностичні моделі</p>
+                        <p class="price__item-cost">600 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Штучна металева лита коронка</p>
+                        <p class="price__item-cost">1200 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Штучна металокерамічна коронка</p>
+                        <p class="price__item-cost">2400 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Штучна коронка з диоксіду цирконія</p>
+                        <p class="price__item-cost">4000 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Штучна керамічна коронка</p>
+                        <p class="price__item-cost">7000 грн</p>
+                    </div>
+                </div> 
+                <div class="prices__item">
+                    <h3 class="prices__item-title">Хірургія</h3>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Контрольно-діагностичні моделі</p>
+                        <p class="price__item-cost">600 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Штучна металева лита коронка</p>
+                        <p class="price__item-cost">1200 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Штучна металокерамічна коронка</p>
+                        <p class="price__item-cost">2400 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Штучна коронка з диоксіду цирконія</p>
+                        <p class="price__item-cost">4000 грн</p>
+                    </div>
+                    <div class="price__item-servise">
+                        <p class="prices__item-text">Штучна керамічна коронка</p>
+                        <p class="price__item-cost">7000 грн</p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__contacts">
+                    <div class="footer__contacts-item">
+                        <p class="footer__contacts-title">Адреса</p>
+                        <p class="footer__contacts-text">м. Вінниця, вул. Князів Коріатовичів 118</p>
+                    </div>
+                    <div class="footer__contacts-item">
+                        <p class="footer__phone-title">Номери телефонів</p>
+                        <a class="footer__contacts-phone" href="tel:+380931226316">(093) 122-63-16</a>
+                        <a class="footer__contacts-phone" href="tel:+380982437833">(098) 243-78-33</a>
+                    </div>
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item footer__social-item1">
+                            <a class="footer__social-link" href="https://t.me/spector7998">
+                                <img class="footer__social-img" src="./images/telegram.svg" alt="Телеграм">
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="viber://chat?number=+380931226316">
+                                <img class="footer__social-img" src="./images/viber.svg" alt="Вайбер">
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="#">
+                                <img class="footer__social-img" src="./images/messenger.svg" alt="Месенджер">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162.85425944519474!2d28.461315482854857!3d49.225820247778515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5b3151e1120b%3A0xed0e915b5f523f25!2z0JXQutC-INGB0YLQvtC80LDRgtC-0LvQvtCz0ZbRjyBEci5GaWxhdG92aWNo!5e0!3m2!1sru!2sua!4v1669221879668!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p class="footer__copy">Copyright © 2022 M&M Dental. Всі права захищені </p>
+        </div>
+
+    </footer>
+
+
+     <!-- pop-up 2  -->
+     <div class="popup-bg">
+        <div class="popup">
+            <img class="close-popup" src="./images/close.png" alt="">
+            <form class="form telegram-form">
+                <input required type="text" class="form-input" name="name" placeholder="Ім’я*">
+                <input required type="text" class="phone form-input" name="phone" placeholder="Телефон*">
+                <button class="pop-up-btn">Залишити заявку</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>   
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.fancybox.min.js"></script>
+    <script src="./js/jquery.maskedinput.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
