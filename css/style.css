@@ -391,13 +391,21 @@ color: #8F8F8F;
     align-items: center;
 }
 
-.doctors__img1{
+.doctors__img{
+    max-width: 470px;
+    max-height: 610px;
+}
+
+.doctors__img1 {
+    border-radius: 150px 15px 15px 15px;
     margin-right: 100px;
 }
 
-.doctors__img2{
+.doctors__img2 {
+    border-radius: 15px 150px 15px 15px;
     margin-left: 100px;
 }
+
 
 .doctors__item{
     display: flex;
@@ -970,10 +978,12 @@ color: #8F8F8F;
     
     .doctors__item {
         flex-direction: column;
+        align-items: center;
     }
 
     .doctors__img1,
     .doctors__img2{
+        border-radius: 15px 15px 15px 15px;
         margin: 0;
     }
 
@@ -1278,6 +1288,11 @@ color: #8F8F8F;
     .logo__descr {
         font-size: 12px;
         line-height: 22px;
+    }
+
+    .doctors__img1,
+    .doctors__img2 {
+        width: 90%;
     }
 }
 
